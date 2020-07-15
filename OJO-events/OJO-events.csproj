@@ -67,8 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\bootstrap-grid.min.css" />
+    <Content Include="CSS\bootstrap.min.css" />
     <Content Include="Code.html" />
+    <Content Include="CSS\prism.css" />
     <Content Include="Index.html" />
+    <Content Include="SCRIPTS\bootstrap.bundle.min.js" />
+    <Content Include="SCRIPTS\bootstrap.min.js" />
+    <Content Include="SCRIPTS\jquery.js" />
+    <Content Include="SCRIPTS\prism.js" />
     <Content Include="Solve.html" />
     <Content Include="Web.config" />
   </ItemGroup>
