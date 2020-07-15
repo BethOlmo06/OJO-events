@@ -1,117 +1,47 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <title>OWC Events | Beth Olmo</title>
 
-    <title>Coder Foundry MiniSite Template</title>
+    <link rel="icon" href="IMG/tickets150.png" />
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="CSS/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/cover.css" rel="stylesheet" />
+    <link href="CSS/prism.css" rel="stylesheet" />
+
 
 </head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
-            <a class="navbar-brand" href="/Index.html">Challenge Name Here</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/Index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Solve.html">Solve</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Code.html">Code</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Git</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog Post/YouTube Explanation</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">This Page shows your JS code</h1>
-                <p class="lead">You need to use a Syntax Highlighter - Prism.js is default</p>
-                <ul class="list-unstyled">
-                    <li>Code with highlighter</li>
-                    <li>Will display on this page</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <pre class="line-numbers language-js">
-                <code class="language-js">
-                            $("#submit").click(function () {
-                                let word = $("#userWord").val()
-                                $("#msg1").text(`You entered: ${word}`);
-
-                                if (word.length < 2) {
-                                alert("Please use at least 2 letters")
-                                } else {
-                                let cleanWord = word.toLowerCase().replace(/\s|\'|\"/g, '');
-                                $("#msg2").text(`Cleaned up a bit, that's: ${cleanWord}.`);
-
-                                let revWord = word.split('').reverse().join('');
-                                $("#msg3").text(`Reversed, it's: ${revWord}.`);
-
-                                let cleanRevWord = revWord.toLowerCase().replace(/\s|\'|\"/g, '');
-                                $("#msg4").text(`Now when we clean it up, it's ${cleanRevWord}.`);
-
-                                let result = "";
-
-                                if (cleanWord == cleanRevWord) {
-                                result = `So, ${word} IS a palindrome!`;
-                                } else {
-                                result = `So, ${word} is NOT a palindrome.`;
-                                };
-
-                                $("#finalMsg").text(" " + result);
-                                }
-                                });
-                            $("#clear").click(function () {
-                            $("#userWord").val("");
-                            $("#msg1").text("");
-                            $("#msg2").text("");
-                            $("#msg3").text("");
-                            $("#msg4").text("");
-                            $("#finalMsg").text("");
-                            });</code>
-                        </pre>
-            </div>
-        </div>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">Cover</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Cover your page.</h1>
+    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+    </p>
+  </main>
 
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    </div>
+  </footer>
+</div>
 </body>
-
 </html>

@@ -69,14 +69,17 @@
   <ItemGroup>
     <Content Include="CSS\bootstrap-grid.min.css" />
     <Content Include="CSS\bootstrap.min.css" />
-    <Content Include="Code.html" />
+    <Content Include="CSS\cover.css" />
     <Content Include="CSS\prism.css" />
-    <Content Include="Index.html" />
+    <Content Include="code.html" />
+    <Content Include="IMG\tickets150.png" />
+    <Content Include="solve.html" />
+    <Content Include="index.html" />
     <Content Include="SCRIPTS\bootstrap.bundle.min.js" />
     <Content Include="SCRIPTS\bootstrap.min.js" />
     <Content Include="SCRIPTS\jquery.js" />
     <Content Include="SCRIPTS\prism.js" />
-    <Content Include="Solve.html" />
+    <Content Include="SCRIPTS\solve.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
